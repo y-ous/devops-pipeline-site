@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Takenlijst</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Takenlijst</h1>
+      <form id="task-form">
+        <label for="task-input">Nieuwe taak</label>
+        <input id="task-input" name="task" type="text" maxlength="100" autocomplete="off">
+        <button type="submit">Toevoegen</button>
+      </form>
+      <p id="error" role="alert" hidden></p>
+      <ul id="task-list"></ul>
+      <p id="counter" aria-live="polite">0 open taken</p>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
