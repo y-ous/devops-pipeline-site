@@ -29,5 +29,5 @@ export function countOpen(tasks) {
 
 export function counterText(tasks) {
   const n = countOpen(tasks);
-  return n === 1 ? '1 open taak' : `${n} open taken`;
+  return n === 1 ? '1 open taakjes' : `${n} open taken`;
 }
